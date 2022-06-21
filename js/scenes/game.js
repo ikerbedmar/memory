@@ -1,6 +1,6 @@
 import{options} from "../options";
 
-var dificulty= options.getDificulty()
+var dificulty= options.getDificulty();
 
 
 class GameScene extends Phaser.Scene {
