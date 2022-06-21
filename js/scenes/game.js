@@ -42,15 +42,7 @@ class GameScene extends Phaser.Scene {
 				card.disableBody(true,true);
 				if (this.firstClick){
 					if (this.firstClick.card_id !== card.card_id){
-						if (dificultad=='easy'){
-							this.score -= 5;
-						}
-						else if (dificultad=='normal'){
-							this.score -= 10;
-						}
-						else {
-							this.score -= 20;
-						}
+						this.score -= 20;
 						this.firstClick.enableBody(false, 0, 0, true, true);
 						card.enableBody(false, 0, 0, true, true);
 						if (this.score <= 0){
