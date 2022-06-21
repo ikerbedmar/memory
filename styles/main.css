@@ -6,6 +6,11 @@ input[type=number]{
     text-align: center;
 }
 
+body{
+	background-color:lightyellow;
+}
+
+
 #title{
 	font-size: 26px;
 	line-height: 75px;
@@ -25,15 +30,24 @@ p{
 	text-align: center;
 }
 
+button.menu-object{
+	font-size: 18px;
+	width: 275px;
+	height: 70px;
+	background-color:lightgreen;
+}
+
 button.menu-object:active{
 	font-size: 18px;
 	width: 275px;
 	height: 70px;
+	background-color: green;
 }
 
 button.menu-object:hover:not(:active){
 	font-size: 22px;
 	width: 325px;
 	height: 85px;
+	background-color:greenyellow;
 }
 
