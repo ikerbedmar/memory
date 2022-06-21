@@ -1,3 +1,8 @@
+import{options} from "../options";
+
+var dificulty= options.getDificulty()
+
+
 class GameScene extends Phaser.Scene {
     constructor (){
         super('GameScene');
@@ -42,7 +47,15 @@ class GameScene extends Phaser.Scene {
 				card.disableBody(true,true);
 				if (this.firstClick){
 					if (this.firstClick.card_id !== card.card_id){
-						this.score -= 20;
+						if (dificulty == "easy"){
+							this.score -= 5;
+						}
+						else if(dificulty == "normal"){
+							this.score -= 10;
+						}
+						else {
+							this.score -= 20;
+						}
 						this.firstClick.enableBody(false, 0, 0, true, true);
 						card.enableBody(false, 0, 0, true, true);
 						if (this.score <= 0){
