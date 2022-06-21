@@ -56,5 +56,6 @@ var options = function(){
 	}; 
 }();
 
-
+var cartas = options.getNumOfCards;
+var dificultad = options.getDificulty;
 
